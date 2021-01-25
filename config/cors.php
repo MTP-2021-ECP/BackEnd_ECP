@@ -1,6 +1,5 @@
 <?php
 
-
 return [
 
     /*
@@ -15,23 +14,12 @@ return [
     | To learn more: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
     |
     */
-
-    
-
     'paths' => ['api/*'],
-
-    'allowed_methods' => ['*'],
-
-    'allowed_origins' => ['http://locahost:8081'],
-
+    'allowed_methods' => ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE'],
+    'allowed_origins' => ['*'],
     'allowed_origins_patterns' => [],
-
     'allowed_headers' => ['*'],
-
     'exposed_headers' => [],
-
     'max_age' => 0,
-
-    'supports_credentials' => true,
-
+    'supports_credentials' => false,
 ];

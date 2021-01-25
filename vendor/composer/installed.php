@@ -6,11 +6,29 @@
     'aliases' => 
     array (
     ),
-    'reference' => '9a2a8b9dfd8c1edb08ef4ebcdf6d2759e8c92f2c',
+    'reference' => '5137f8686178064fa120a73a7078b59300df41ab',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
   array (
+    'asm89/stack-cors' => 
+    array (
+      'pretty_version' => 'v2.0.2',
+      'version' => '2.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8d8f88b3b3830916be94292c1fbce84433efb1aa',
+    ),
+    'barryvdh/laravel-cors' => 
+    array (
+      'pretty_version' => 'v2.0.3',
+      'version' => '2.0.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '01de0fe5f71c70d1930ee9a80385f9cc28e0f63a',
+    ),
     'brick/math' => 
     array (
       'pretty_version' => '0.9.1',
@@ -159,6 +177,15 @@
       array (
       ),
       'reference' => 'feb0e820b8436873675fd3aca04f3728eb2185cb',
+    ),
+    'fruitcake/laravel-cors' => 
+    array (
+      'pretty_version' => 'v2.0.3',
+      'version' => '2.0.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '01de0fe5f71c70d1930ee9a80385f9cc28e0f63a',
     ),
     'graham-campbell/result-type' => 
     array (
@@ -445,7 +472,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '9a2a8b9dfd8c1edb08ef4ebcdf6d2759e8c92f2c',
+      'reference' => '5137f8686178064fa120a73a7078b59300df41ab',
     ),
     'laravel/passport' => 
     array (
