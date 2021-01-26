@@ -1,5 +1,15 @@
 <?php
 
+
+
+
+
+
+
+
+
+
+
 namespace Composer;
 
 use Composer\Semver\VersionParser;
@@ -14,12 +24,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => 'v8.5.9',
-    'version' => '8.5.9.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '9a2a8b9dfd8c1edb08ef4ebcdf6d2759e8c92f2c',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -453,12 +463,12 @@ private static $installed = array (
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => 'v8.5.9',
-      'version' => '8.5.9.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '9a2a8b9dfd8c1edb08ef4ebcdf6d2759e8c92f2c',
     ),
     'laravel/sail' => 
     array (
@@ -469,6 +479,15 @@ private static $installed = array (
       ),
       'reference' => 'c28c1b77d9aada131861c89bc406813859b62844',
     ),
+    'laravel/socialite' => 
+    array (
+      'pretty_version' => 'v5.1.3',
+      'version' => '5.1.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2e6beafe911a09f2300353c102d882e9d63f1f72',
+    ),
     'laravel/tinker' => 
     array (
       'pretty_version' => 'v2.5.0',
@@ -477,6 +496,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '45884b526e10a88a1b179fa1a1a24d5468c668c2',
+    ),
+    'laravel/ui' => 
+    array (
+      'pretty_version' => 'v3.2.0',
+      'version' => '3.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a1f82c6283c8373ea1958b8a27c3d5c98cade351',
     ),
     'league/commonmark' => 
     array (
@@ -504,6 +532,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3',
+    ),
+    'league/oauth1-client' => 
+    array (
+      'pretty_version' => 'v1.9.0',
+      'version' => '1.9.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1e7e6be2dc543bf466236fb171e5b20e1b06aee6',
     ),
     'mockery/mockery' => 
     array (
@@ -773,8 +810,8 @@ private static $installed = array (
     array (
       'provided' => 
       array (
-        0 => '1.0',
-        1 => '1.0.0',
+        0 => '1.0.0',
+        1 => '1.0',
       ),
     ),
     'psr/simple-cache' => 
