@@ -12,14 +12,24 @@ class PassportAuthController extends Controller
     public function register(Request $request)
     {
         $this->validate($request, [
-            'name' => 'required|min:4',
-            'email' => 'required|email',
-            'password' => 'required|min:8',
+            'firstname' => ['required', 'string', 'max:255', 'alpha'],
+            'lastname' => ['required', 'string', 'max:255', 'alpha'],
+            'dateOfBirth' => ['required', 'date'],
+            'address' => [ 'required', 'string', 'max:255'],
+            'zipCode' => [ 'required', 'string', 'size:5'],
+            'phoneNumber' => ['required', 'string', 'size:10'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8'],
         ]);
  
         $user = User::create([
-            'name' => $request->name,
+            'firstname' => $request->firstname,
+            'lastname' => $request->lastname,
             'email' => $request->email,
+            'dateOfBirth'=> $request->dateOfBirth,
+            'address'=> $request->address,
+            'zipCode'=> $request->zipCode,
+            'phoneNumber'=> $request->phoneNumber,
             'password' => bcrypt($request->password)
         ]);
        
