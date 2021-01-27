@@ -17,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('sociallogin/{provider}', 'Auth\AuthController@SocialSignup');
+Route::get('auth/{provider}/callback', 'OutController@index')->where('provider', '.*');

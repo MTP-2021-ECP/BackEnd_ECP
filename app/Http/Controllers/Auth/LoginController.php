@@ -54,6 +54,7 @@ class LoginController extends Controller
         $user = Socialite::driver('google')->stateless()->user();
 
         $this->_registerOrLoginUser($user);
+        return response()->json($user);
         
 
         // Return home after login
