@@ -33,8 +33,8 @@ composer install
 
 * You can also create your own .env and then copy to it the .env.example provided in the repo.
     Take note to add:
-    PASSPORT_PERSONAL_ACCESS_CLIENT_ID=
-    PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET=
+    - PASSPORT_PERSONAL_ACCESS_CLIENT_ID=
+    - PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET=
 
 * This will be given to you after running php artisan passport:install
 
@@ -46,7 +46,7 @@ Once you have created your .env run this command
 php artisan passport:install
 ```
 
-> If you have created your own .env file add the CLIENT_ID & THE CLIENT_SECRET given to you after 
+* If you have created your own .env file add the CLIENT_ID & THE CLIENT_SECRET given to you after 
   the passport:install to you .env file. (refer to prvious step)
 
 # !! IMPORTANT Skip ready to launch if you created your own .env file with your own database!!
