@@ -15,44 +15,51 @@ CD into BackEnd_ECP
 ```
 ### Install composer dependencies
 
-```
-Option #1
-composer update ONLY if you have installed composer already
 
+Option #1
+ONLY if you have installed composer already
+```
+composer update 
+```
 Option #2
+```
 composer install
 ```
 ### .ENV Setup
 
-Due to the fact this project is public you must ask one of the projects Owners to get the 
-necessary .env file -> See Organisation ADMIN & OWNERS!!
-This option will grant acces to the database hosted by AWS
+* Due to the fact this project is public you must ask one of the projects Owners to get the 
+    necessary .env file -> See Organisation ADMIN & OWNERS!!
+    This option will grant acces to the database hosted by AWS
 
-You can also create your own .env and then copy to it the .env.example provided in the repo.
-Take note to add:
-PASSPORT_PERSONAL_ACCESS_CLIENT_ID=
-PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET=
+* You can also create your own .env and then copy to it the .env.example provided in the repo.
+    Take note to add:
+    PASSPORT_PERSONAL_ACCESS_CLIENT_ID=
+    PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET=
 
-This will be given to you after running php artisan passport:install
+* This will be given to you after running php artisan passport:install
 
 ### Installing passport and using keys
 
 
 Once you have created your .env run this command
+```
 php artisan passport:install
+```
 
-If you have created your own .env file add the CLIENT_ID & THE CLIENT_SECRET given to you after 
-the passport:install to you .env file. (refer to prvious step)
+> If you have created your own .env file add the CLIENT_ID & THE CLIENT_SECRET given to you after 
+  the passport:install to you .env file. (refer to prvious step)
 
 # !! IMPORTANT Skip ready to launch if you created your own .env file with your own database!!
 
 
 ### Ready to launch
-```
+
 The API is now setup and ready to run!!
 Just run the following command to see:
-php artisan serve -> this will run the app on your localhost!
 ```
+php artisan serve 
+```
+-> this will run the app on your localhost!
 ## !! ONLY FOLLOW THESE STEPS IF YOU CREATED YOUR OWN .ENV FILE!!
 ### Database Migrations
 
