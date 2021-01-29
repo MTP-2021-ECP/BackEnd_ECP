@@ -60,4 +60,26 @@ class RouteServiceProvider extends ServiceProvider
             return Limit::perMinute(60);
         });
     }
+
+    public function before()
+	{
+		URL::setRootControllerNamespace(
+			trim(config('namespaces.controller'), '\\')
+		);
+	}
+
+public function map()
+	{
+		App::booted(function()
+		{
+			// Once the application has booted, we will include the default routes
+			// file. This "namespace" helper will load the routes file within a
+			// route group which automatically sets the controller namespace.
+			$this->namespaced(function()
+			{
+				require app_path().'/Http/routes.php';
+			});
+		});
+	}
+
 }
