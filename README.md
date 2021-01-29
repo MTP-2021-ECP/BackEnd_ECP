@@ -9,6 +9,12 @@
 
 ## Free Covid API Setup
 
+* Pre-Requirements include:
+```
+Laravel latest version
+Composer latest version
+```
+
 ```
 Clone repo BackEnd_ECP
 CD into BackEnd_ECP
@@ -46,8 +52,8 @@ Once you have created your .env run this command
 php artisan passport:install
 ```
 
-* If you have created your own .env file add the CLIENT_ID & THE CLIENT_SECRET given to you after 
-  the passport:install to you .env file. (refer to prvious step)
+* If you have created your own .env file ADD the CLIENT_ID & THE CLIENT_SECRET given to you after 
+  the passport:install to your .env file. (refer to prvious step)
 
 # !! IMPORTANT Skip ready to launch if you created your own .env file with your own database!!
 
