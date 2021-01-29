@@ -1,15 +1,5 @@
 <?php
 
-
-
-
-
-
-
-
-
-
-
 namespace Composer;
 
 use Composer\Semver\VersionParser;
@@ -24,12 +14,16 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => 'dev-main',
-    'version' => 'dev-main',
+    'pretty_version' => 'v8.5.9',
+    'version' => '8.5.9.0',
     'aliases' => 
     array (
     ),
+<<<<<<< HEAD
     'reference' => '29650218d1512fdc3cdb14deface556000464ec1',
+=======
+    'reference' => NULL,
+>>>>>>> bed016b0d951cf2a0c2d689d1e629dc7a2fc5926
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -481,11 +475,12 @@ private static $installed = array (
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
+      'pretty_version' => 'v8.5.9',
+      'version' => '8.5.9.0',
       'aliases' => 
       array (
       ),
+<<<<<<< HEAD
       'reference' => '29650218d1512fdc3cdb14deface556000464ec1',
     ),
     'laravel/passport' => 
@@ -496,6 +491,9 @@ private static $installed = array (
       array (
       ),
       'reference' => 'c2b93a7d8d93cf303bb1eefbfa5610f084f9bdd4',
+=======
+      'reference' => NULL,
+>>>>>>> bed016b0d951cf2a0c2d689d1e629dc7a2fc5926
     ),
     'laravel/sail' => 
     array (
@@ -506,15 +504,6 @@ private static $installed = array (
       ),
       'reference' => 'ce4861be1a528a36c98416c9954f3014d2500415',
     ),
-    'laravel/socialite' => 
-    array (
-      'pretty_version' => 'v5.1.3',
-      'version' => '5.1.3.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '2e6beafe911a09f2300353c102d882e9d63f1f72',
-    ),
     'laravel/tinker' => 
     array (
       'pretty_version' => 'v2.6.0',
@@ -524,6 +513,7 @@ private static $installed = array (
       ),
       'reference' => 'daae1c43f1300fe88c05d83db6f3d8f76677ad88',
     ),
+<<<<<<< HEAD
     'laravel/ui' => 
     array (
       'pretty_version' => 'v3.2.0',
@@ -551,6 +541,8 @@ private static $installed = array (
       ),
       'reference' => '2f533837091d0b76a89a059e7ed2b2732b2f459e',
     ),
+=======
+>>>>>>> bed016b0d951cf2a0c2d689d1e629dc7a2fc5926
     'league/commonmark' => 
     array (
       'pretty_version' => '1.5.7',
@@ -587,6 +579,7 @@ private static $installed = array (
       ),
       'reference' => '3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3',
     ),
+<<<<<<< HEAD
     'league/oauth1-client' => 
     array (
       'pretty_version' => 'v1.9.0',
@@ -619,6 +612,8 @@ private static $installed = array (
         0 => '*',
       ),
     ),
+=======
+>>>>>>> bed016b0d951cf2a0c2d689d1e629dc7a2fc5926
     'mockery/mockery' => 
     array (
       'pretty_version' => '1.4.2',
@@ -939,8 +934,8 @@ private static $installed = array (
     array (
       'provided' => 
       array (
-        0 => '1.0.0',
-        1 => '1.0',
+        0 => '1.0',
+        1 => '1.0.0',
       ),
     ),
     'psr/simple-cache' => 

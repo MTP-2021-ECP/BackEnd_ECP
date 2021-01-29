@@ -13,15 +13,18 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
+<<<<<<< HEAD
         "laravel/passport": "^10.1",
         "laravel/socialite": "^5.1",
         "laravel/tinker": "^2.5",
+=======
+        "laravel/tinker": "^2.5"
+>>>>>>> bed016b0d951cf2a0c2d689d1e629dc7a2fc5926
     },
     "require-dev": {
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
-        "laravel/ui": "^3.2",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
         "phpunit/phpunit": "^9.3.3"
