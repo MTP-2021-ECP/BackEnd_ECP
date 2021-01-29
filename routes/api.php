@@ -17,10 +17,11 @@ use App\Http\Controllers\PostController;
 */
 
 Route::group(['middleware' => ['cors']], function () {
-    Route::post('register', [PassportAuthController::class, 'register']);
+    Route::post('register', [PassportAuthController::class, 'register', 'sendEmail']);
     Route::post('login', [PassportAuthController::class, 'login']);
     
 });
+
 
 
 Route::middleware('auth:api')->group(function () {

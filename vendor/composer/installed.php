@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'bc9edadb5e2b6d2e52db865fc6415f51561452a7',
+    'reference' => 'c235bea579b1d0866a594f8e9f498f56507b3d1f',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -472,7 +472,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'bc9edadb5e2b6d2e52db865fc6415f51561452a7',
+      'reference' => 'c235bea579b1d0866a594f8e9f498f56507b3d1f',
     ),
     'laravel/passport' => 
     array (
@@ -500,6 +500,15 @@
       array (
       ),
       'reference' => 'daae1c43f1300fe88c05d83db6f3d8f76677ad88',
+    ),
+    'laravel/ui' => 
+    array (
+      'pretty_version' => 'v3.2.0',
+      'version' => '3.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a1f82c6283c8373ea1958b8a27c3d5c98cade351',
     ),
     'lcobucci/clock' => 
     array (
@@ -1417,6 +1426,15 @@
       array (
       ),
       'reference' => 'bafc69caeb4d49c39fd0779086c03a3738cbb389',
+    ),
+    'wildbit/swiftmailer-postmark' => 
+    array (
+      'pretty_version' => '3.3.0',
+      'version' => '3.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '44ccab7834de8b220d292647ecb2cb683f9962ee',
     ),
   ),
 );

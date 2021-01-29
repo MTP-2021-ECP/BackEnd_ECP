@@ -3,12 +3,11 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
+use Mail;
+use App\Mail\EmailRegister;
 
 class PassportAuthController extends Controller
 {
-    /**
-     * Registration
-     */
     public function register(Request $request)
     {
         $this->validate($request, [
@@ -34,13 +33,13 @@ class PassportAuthController extends Controller
         ]);
        
         $token = $user->createToken('LaravelAuthApp')->accessToken;
- 
+
+        Mail::to($user->email)->send(new EmailRegister($user->firstname));
+
         return response()->json(['token' => $token], 200);
+
     }
  
-    /**
-     * Login
-     */
     public function login(Request $request)
     {
         $data = [
