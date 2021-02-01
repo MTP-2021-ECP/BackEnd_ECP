@@ -21,7 +21,7 @@ class PassportAuthController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8'],
         ]);
- 
+
         $user = User::create([
             'firstname' => $request->firstname,
             'lastname' => $request->lastname,
@@ -32,12 +32,12 @@ class PassportAuthController extends Controller
             'phoneNumber'=> $request->phoneNumber,
             'password' => bcrypt($request->password)
         ]);
-       
+
         $token = $user->createToken('LaravelAuthApp')->accessToken;
- 
+
         return response()->json(['token' => $token], 200);
     }
- 
+
     /**
      * Login
      */
@@ -47,12 +47,25 @@ class PassportAuthController extends Controller
             'email' => $request->email,
             'password' => $request->password
         ];
- 
+
         if (auth()->attempt($data)) {
             $token = auth()->user()->createToken('LaravelAuthApp')->accessToken;
             return response()->json(['token' => $token], 200);
         } else {
             return response()->json(['error' => 'Unauthorised'], 401);
         }
-    }  
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Models\User  $user
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+
+        return response()->json(User::findOrFail($id));
+
+    }
 }
