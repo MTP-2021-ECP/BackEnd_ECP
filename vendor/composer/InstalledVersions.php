@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '180380b7bfff06ccabd4a3e2b48abf95700cc911',
+    'reference' => 'cb652d620971a475b208a141f68dee4249e7e066',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -458,7 +458,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '180380b7bfff06ccabd4a3e2b48abf95700cc911',
+      'reference' => 'cb652d620971a475b208a141f68dee4249e7e066',
     ),
     'laravel/passport' => 
     array (
@@ -505,23 +505,14 @@ private static $installed = array (
       ),
       'reference' => 'a1f82c6283c8373ea1958b8a27c3d5c98cade351',
     ),
-    'lcobucci/clock' => 
-    array (
-      'pretty_version' => '2.0.0',
-      'version' => '2.0.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '353d83fe2e6ae95745b16b3d911813df6a05bfb3',
-    ),
     'lcobucci/jwt' => 
     array (
-      'pretty_version' => '4.0.1',
-      'version' => '4.0.1.0',
+      'pretty_version' => '3.4.3',
+      'version' => '3.4.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'b80c4876a010cd8bfa9c78de64c930bb2fc8fb9a',
+      'reference' => 'cd83b5421df3dbbbc66bd07a5b970c9efb6371b9',
     ),
     'league/commonmark' => 
     array (
