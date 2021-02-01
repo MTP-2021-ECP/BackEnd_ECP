@@ -25,6 +25,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['middleware' => ['cors']], function () {
     Route::post('register', [PassportAuthController::class, 'register']);
     Route::post('login', [PassportAuthController::class, 'login']);
+    Route::resource('PassportAuth', PassportAuthController::class);
     Route::resource('user', UserController::class );
 });
 
