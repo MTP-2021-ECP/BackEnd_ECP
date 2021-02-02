@@ -14,7 +14,7 @@ return [
     | To learn more: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
     |
     */
-    'paths' => ['api/*'],
+    'paths' => ['https://free-covid-front-epitech.herokuapp.com/*'],
     'allowed_methods' => ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE'],
     'allowed_origins' => ['*,*'],
     'allowed_origins_patterns' => [],
