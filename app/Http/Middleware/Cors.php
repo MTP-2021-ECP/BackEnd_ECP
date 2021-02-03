@@ -16,9 +16,9 @@ class Cors
      */
     public function handle(Request $request, Closure $next)
     {
-        return $next($request);
         header('Access-Control-Allow-Origin:  http://localhost:8081');
         header('Access-Control-Allow-Headers:  Content-Type, X-Auth-Token, Authorization, Origin');
         header('Access-Control-Allow-Methods:  POST, PUT');
+        return $next($request);
     }
 }
