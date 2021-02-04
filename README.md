@@ -7,15 +7,66 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Laravel setup
+## Free Covid API Setup
 
+* Pre-Requirements include:
+```
+Laravel latest version
+Composer latest version
+```
+
+```
+Clone repo BackEnd_ECP
+CD into BackEnd_ECP
+```
 ### Install composer dependencies
 
+
+Option #1
+ONLY if you have installed composer already
 ```
-cd laravel-app
+composer update 
+```
+Option #2
+```
 composer install
 ```
+### .ENV Setup
 
+* Due to the fact this project is public you must ask one of the projects Owners to get the 
+    necessary .env file -> See Organisation ADMIN & OWNERS!!
+    This option will grant acces to the database hosted by AWS
+
+* You can also create your own .env and then copy to it the .env.example provided in the repo.
+    Take note to add:
+    - PASSPORT_PERSONAL_ACCESS_CLIENT_ID=
+    - PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET=
+
+* This will be given to you after running php artisan passport:install
+
+### Installing passport and using keys
+
+
+Once you have created your .env run this command
+```
+php artisan passport:install
+```
+
+* If you have created your own .env file ADD the CLIENT_ID & THE CLIENT_SECRET given to you after 
+  the passport:install to your .env file. (refer to prvious step)
+
+# !! IMPORTANT Skip ready to launch if you created your own .env file with your own database!!
+
+
+### Ready to launch
+
+The API is now setup and ready to run!!
+Just run the following command to see:
+```
+php artisan serve 
+```
+-> this will run the app on your localhost!
+## !! ONLY FOLLOW THESE STEPS IF YOU CREATED YOUR OWN .ENV FILE!!
 ### Database Migrations
 
 After installing composer dependencies, add your database credentials in `.env` file and then run migrations.
@@ -31,7 +82,7 @@ After migratating your database tables, its time to seed some default data!! For
 php artisan db:seed --force
 ```
 
-Now, in the terminal run `artisan serve` command. It will run the application at `http://127.0.0.1:8000` URL, and that URL path used in the Vue.js app.
+Now, in the terminal run `artisan serve` command. It will run the application at `http://127.0.0.1:8000`
 
 ```
 php artisan serve
