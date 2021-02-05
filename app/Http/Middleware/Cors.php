@@ -16,7 +16,7 @@ class Cors
      */
     public function handle(Request $request, Closure $next)
     {
-        header('Access-Control-Allow-Origin:  https://vigorous-nobel-5508a0.netlify.app/');
+        header('Access-Control-Allow-Origin:  https://vigorous-nobel-5508a0.netlify.app');
         header('Access-Control-Allow-Headers:  Content-Type, X-Auth-Token, Authorization, Origin');
         header('Access-Control-Allow-Methods:  POST, PUT');
         return $next($request);
